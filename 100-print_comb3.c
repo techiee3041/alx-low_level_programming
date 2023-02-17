@@ -7,22 +7,25 @@
 
 int main(void)
 {
-	int x, y;
+	int x;
+	int y;
 
-	for (x = 0; x < 9; x++)
+	for (x = 0 ; x < 9 ; x++)
 	{
-		for (y = y + 1; y < 10; y++)
-		{
-			putchar((x % 10) + '0');
-			putchar((y % 10) + '0');
-
-			if (x == 8 && y == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
-		}
+		y = x + 1;
+		do {
+			putchar('0' + x);
+			putchar('0' + y);
+			if (x < 8)
+			{
+				putchar(',');
+				putchar(32);
+			}
+			y++;
+		} while (y < 10);
 	}
 	putchar('\n');
 	return (0);
 }
+
+
