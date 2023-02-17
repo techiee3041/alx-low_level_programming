@@ -12,20 +12,17 @@ int main(void)
 
 	for (x = 0 ; x < 9 ; x++)
 	{
-		y = x + 1;
-		do {
+		for (y = x + 1; y < 10; y++)
+		{
 			putchar('0' + x);
 			putchar('0' + y);
 			if (x < 8)
 			{
 				putchar(',');
-				putchar(32);
+				putchar(' ');
 			}
-			y++;
-		} while (y < 10);
+		}
 	}
 	putchar('\n');
 	return (0);
 }
-
-
