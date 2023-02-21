@@ -3,8 +3,8 @@
 
 /**
  * _abs - computes the value of an integer
- * @int: the value being tested
- * Return: when int < 0, returns int*-1, otherwise returns the value of integer
+ * @x: the value being tested
+ * Return: when integer is less 0, returns x*-1, else returns integer value
  */
 
 
