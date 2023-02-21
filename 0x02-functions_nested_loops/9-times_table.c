@@ -10,9 +10,12 @@ void times_table(void)
 
 	for (i = 0; i <= 9; i++)
 	{
+		_putchar('0');
 
 		for (j = 0; j <= 9; j++)
 		{
+			_putchar(',');
+			_putchar(' ');
 			k = i * j;
 
 			if (k <= 9)
@@ -24,12 +27,6 @@ void times_table(void)
 				_putchar((k / 10) + '0');
 			}
 			_putchar((k % 10) + '0');
-
-			if (j != 9)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
 		}
 
 		_putchar('\n');
