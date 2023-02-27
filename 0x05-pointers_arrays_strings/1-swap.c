@@ -2,7 +2,6 @@
 
 
 /**
- *
  * swap_int - a function that swaps the value of two integers
  * @a: integer to swap with b
  * @b: value to swap with a
