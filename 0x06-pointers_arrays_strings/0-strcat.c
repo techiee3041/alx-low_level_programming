@@ -12,17 +12,17 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int aray = 0, d_count = 0;
+	char *arr = dest;
 
-	while (dest[aray++])
+	while (*arr)/*finding the end of dest string*/
 	{
-		d_count++;
+		arr++;
 	}
-
-	for (aray = 0; src[aray]; aray++)
+	while (*src)/*copying the src string to dest string*/
 	{
-		dest[d_count++] = src[aray];
+		*arr++ = *src++;
 	}
+	*arr = '\0'; /*addition of a null terminating byte*/
 
 	return (dest);
 }
