@@ -1,7 +1,7 @@
 **0x08. C - Recursion**
 
 
-#>General
+# General
 
 1. What is recursion
 
