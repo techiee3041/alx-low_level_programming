@@ -1,11 +1,12 @@
 #include "main.h"
 
 /**
- * _pow_recursion - function that finds the value of a number raised to another number
+ * _pow_recursion - function that finds x to power y
  *
  * @x: base number
  * @y: exponential number
  *
+ * Return: returns result
  */
 
 int _pow_recursion(int x, int y)
