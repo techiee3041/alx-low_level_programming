@@ -1,12 +1,12 @@
 **0x08. C - Recursion**
 
 
->General
+#>General
 
-*What is recursion
+1. What is recursion
 
-*How to implement recursion
+2. How to implement recursion
 
-*In what situations you should implement recursion
+3. In what situations you should implement recursion
 
-*In what situations you shouldn’t implement recursion
+4. In what situations you shouldn’t implement recursion
