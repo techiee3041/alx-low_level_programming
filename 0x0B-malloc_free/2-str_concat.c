@@ -7,39 +7,33 @@
  * @s2: second string to concatenate
  * Return: returns concateated string
  */
+
 char *str_concat(char *s1, char *s2)
 {
-	char *conc;
-	int sn1, sn2, n, i;
-
-	sn1 = strlen(s1);
-	sn2 = strlen(s2);
-	n = sn1 + sn2 + 1;
+	char *join;
+	int copy = 0;
+	int length = 0;
+	int i;
 
 	if (s1 == NULL)
-	{
-		return ("");
-	}
+		s1 = "";
+
 	if (s2 == NULL)
-	{
-		return ("");
-	}
+		s2 = "";
 
-	conc = malloc(n);
+	for (i = 0; s1[i] || s2[i]; i++)
+		length++;
 
-	if (conc == NULL)
-	{
+	join = malloc(sizeof(char) * length);
+
+	if (join == NULL)
 		return (NULL);
-	}
-	for (i = 0; i < sn1; i++)
-	{
-		conc[i] = s1[i];
-	}
-	for (i = 0; i < sn2; i++)
-	{
-		conc[i + sn1] = s2[i];
-	}
-	conc[n - 1] = '\0';
 
-	return (conc);
+	for (i = 0; s1[i]; i++)
+		join[copy++] = s1[i];
+
+	for (i = 0; s2[i]; i++)
+		join[copy++] = s2[i];
+
+	return (join);
 }
